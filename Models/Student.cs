@@ -1,7 +1,7 @@
 namespace DemoMVC.Models
 {
     public class Student{
-        public String StudentID { get; set; }
+        public int StudentID { get; set; }
     }
 }
 //xyzabc
