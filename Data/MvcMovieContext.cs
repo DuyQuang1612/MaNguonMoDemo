@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using DemoMVC.Models;
-
+namespace DemoMVC.Data
+{
     public class MvcMovieContext : DbContext
     {
         public MvcMovieContext (DbContextOptions<MvcMovieContext> options)
@@ -14,3 +15,4 @@ using DemoMVC.Models;
 
         public DbSet<DemoMVC.Models.Movie> Movie { get; set; }
     }
+}
